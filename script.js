@@ -44,6 +44,9 @@ function onSubmit(event){
     if(onBlurName() && onBlurEmail() && onBlurMsg()){
 
         alert("Feedback sent successfully!");
+        name.value = "";
+        email.value = "";
+        msg.value = "";
     }
     else{
         alert("Please Enter the valid details...");
